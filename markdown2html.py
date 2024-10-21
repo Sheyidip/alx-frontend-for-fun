@@ -28,9 +28,8 @@ try:
     with open(output_file, 'w') as html_file:
         html_file.write(html_content)
 
-    sys.exit(0)
+    sys.exit(0)  # Success
 
 except Exception as e:
     print(f"Error: {e}", file=sys.stderr)
-    sys.exit(1)
-
+    sys.exit(1)  # Error
